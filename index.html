@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Password Generator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="modal">
+      <div>
+        <h1>Generate a secure password!</h1>
+      </div>
+      <div class="symbols">
+        <a>1. Special characters/symbols</a>
+        <input class="checkbox" type="checkbox" id="task1"/>
+      </div>
+      <div class="numbers">
+        <a>2. Numbers</a>
+        <input class="checkbox" type="checkbox" id="task2"/>
+      </div>
+      <div class="upper-case">
+        <a>3. Upper-Case</a>
+        <input class="checkbox" type="checkbox" id="task3"/>
+      </div>
+      <div class="lower-case">
+        <a>4. Lower Case</a>
+        <input class="checkbox" type="checkbox" id="task4"/>
+      </div>
+    </div>
+
+    <button class="generate-button">GENERATE!</button>
+
+    <div class="modal-generate">
+      <div>
+        <a class="pasted-password"></a>
+      </div>
+      <button class="copy-button"></button> <!--remove hidden later-->
+      <div>
+      <button class="retry-button">Reset</button>
+    </div>
+    </div>
+    <div class="clipboard-modal hidden">
+      <a class="copy-clipboard">Copied to Clipboard</a>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

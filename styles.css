@@ -1,0 +1,135 @@
+* {
+  font-family: Roboto;
+}
+
+body {
+  background: linear-gradient(to top left, #28b487, #7dd56f);
+}
+
+.modal,
+.clipboard-modal {
+  display: flex;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 15px;
+  flex-direction: column;
+  width: 50%;
+  max-width: 70%;
+  min-width: 40%;
+  height: 300px;
+  background: linear-gradient(to top left, #28b487, #7dd56f);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+
+
+
+.generate-button {
+  display: flex;
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 15px;
+  flex-direction: column;
+  width: 25%;
+  max-width: 70%;
+  min-width: 10%;
+  background: linear-gradient(to top left, #28b487, #7dd56f);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  align-items: center;
+  cursor: pointer;
+  vertical-align: middle;
+  border: none;
+  font-weight: bold;
+}
+
+.generate-button:hover,
+.copy-button:hover,
+.retry-button:hover {
+  opacity: 0.7;
+}
+.generate-button:active,
+.copy-button:active,
+.retry-button:active {
+  opacity: 0.5;
+}
+
+.symbols,
+.numbers,
+.lower-case,
+.upper-case {
+  padding: 7px;
+  display: grid;
+  grid-template-columns: 1fr 100px;
+  height: 30px;
+  align-items: center;
+  font-weight: bold;
+}
+
+.checkbox {
+  height: 23px;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+.modal-generate {
+  display: grid;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 15px;
+  flex-direction: column;
+  width: 500px;
+  max-width: 60%;
+  min-width: 40%;
+  height: 30px;
+  background: linear-gradient(to top left, #28b487, #7dd56f);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  align-items: horizontal;
+  grid-template-columns: 1fr 50px 75px;
+}
+
+.copy-button {
+  background: none;
+  cursor: pointer;
+  width: 30px;
+  background-image: url(copy-button.png);
+  border: none;
+  background-size: contain;
+  justify-self: end;
+  position: relative;
+}
+
+.clipboard-modal {
+  background: none;
+  top: 82%; 
+  left: 82%; 
+  transform: translateX(-50%); 
+  width: 100px; 
+  height: 5px; 
+  font-size: 10px;
+  min-width: none;
+  max-width: none;
+  box-shadow: none;
+}
+
+
+
+.retry-button {
+  border: 1px solid;
+  border-radius: 2px;
+  background-color: transparent;
+  width: 70px;
+  cursor: pointer;
+  margin-left: 10px;
+  height: 100%;
+  background-size: contain;
+}
+
